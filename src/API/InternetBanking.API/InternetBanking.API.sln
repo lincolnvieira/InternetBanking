@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32901.215
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InternetBanking.API", "InternetBanking.API\InternetBanking.API.csproj", "{7C88686A-5930-4617-8E6C-EB7A41E7D7D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Application", "InternetBanking.Application\InternetBanking.Application.csproj", "{778B7E24-AC91-4962-A50D-EE35B2870601}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InternetBanking.Identity", "InternetBanking.Identity\InternetBanking.Identity.csproj", "{EA31F32F-0E7E-4FF7-B1D4-D37BDBF262FC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7C88686A-5930-4617-8E6C-EB7A41E7D7D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C88686A-5930-4617-8E6C-EB7A41E7D7D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C88686A-5930-4617-8E6C-EB7A41E7D7D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C88686A-5930-4617-8E6C-EB7A41E7D7D7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{778B7E24-AC91-4962-A50D-EE35B2870601}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{778B7E24-AC91-4962-A50D-EE35B2870601}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{778B7E24-AC91-4962-A50D-EE35B2870601}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{778B7E24-AC91-4962-A50D-EE35B2870601}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA31F32F-0E7E-4FF7-B1D4-D37BDBF262FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA31F32F-0E7E-4FF7-B1D4-D37BDBF262FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA31F32F-0E7E-4FF7-B1D4-D37BDBF262FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA31F32F-0E7E-4FF7-B1D4-D37BDBF262FC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B4D16E48-89E9-41F0-A437-BE33514190A9}
+	EndGlobalSection
+EndGlobal
