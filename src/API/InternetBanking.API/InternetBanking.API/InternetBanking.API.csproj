@@ -15,6 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\InternetBanking.Application\InternetBanking.Application.csproj" />
     <ProjectReference Include="..\InternetBanking.Identity\InternetBanking.Identity.csproj" />
   </ItemGroup>
 

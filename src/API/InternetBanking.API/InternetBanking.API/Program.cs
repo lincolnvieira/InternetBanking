@@ -1,4 +1,8 @@
+using InternetBanking.Application.Interfaces;
 using InternetBanking.Configuration;
+using InternetBanking.Identity;
+using InternetBanking.Identity.Data;
+using Microsoft.AspNetCore.Identity;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +14,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddIdentityConfiguration(builder.Configuration);
+
+builder.Services.AddScoped<IAuthenticationService, AuthenticationService>();
 
 var app = builder.Build();
 

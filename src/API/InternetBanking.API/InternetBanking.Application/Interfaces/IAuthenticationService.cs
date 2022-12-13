@@ -1,4 +1,5 @@
-﻿using System;
+﻿using InternetBanking.Application.DTOs.Request;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace InternetBanking.Application.Interfaces
 {
     public interface IAuthenticationService
     {
-
+        Task AddUser(AddUserRequest addUserRequest);
+        void AuthenticateUser();
     }
 }
