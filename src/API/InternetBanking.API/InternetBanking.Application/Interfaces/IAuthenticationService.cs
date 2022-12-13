@@ -10,6 +10,6 @@ namespace InternetBanking.Application.Interfaces
     public interface IAuthenticationService
     {
         Task AddUser(AddUserRequest addUserRequest);
-        void AuthenticateUser();
+        Task<bool> AuthenticateUser(AuthenticateUserRequest authenticateUserRequest);
     }
 }

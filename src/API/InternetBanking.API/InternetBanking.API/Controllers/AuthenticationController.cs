@@ -24,5 +24,16 @@ namespace InternetBanking.AuthAPI.Controllers
 
             return Ok();
         }
+
+        [HttpPost("AuthenticateUser")]
+        public async Task<ActionResult> AuthenticateUser(AuthenticateUserRequest authenticateUserRequest)
+        {
+            bool sucesso = await _authenticationService.AuthenticateUser(authenticateUserRequest);
+
+            if (sucesso)
+                return Ok();
+            else
+                return BadRequest();
+        }
     }
 }

@@ -34,29 +34,11 @@ namespace InternetBanking.Identity
                 
         }
 
-        public async void AuthenticateUser()
+        public async Task<bool> AuthenticateUser(AuthenticateUserRequest authenticateUserRequest)
         {
-            var result = await _signInManager.PasswordSignInAsync("", "", false, false);
+            var result = await _signInManager.PasswordSignInAsync(authenticateUserRequest.UserName, authenticateUserRequest.Password, false, false);
 
-            if (!result.Succeeded)
-            {
-                if (result.IsLockedOut)
-                {
-
-                }
-                else if (result.IsNotAllowed)
-                {
-
-                }
-                else if (result.RequiresTwoFactor)
-                {
-
-                }
-                else
-                {
-                    // user ou senha invalidos
-                }
-            }
+            return result.Succeeded;
         }
 
         private async Task GenerateJwtToken()
