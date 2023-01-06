@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "InternetBnaking.WebApp": {
+    "InternetBanking-WebApp": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -60,10 +60,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "InternetBnaking.WebApp:build:production"
+              "browserTarget": "InternetBanking-WebApp:build:production"
             },
             "development": {
-              "browserTarget": "InternetBnaking.WebApp:build:development"
+              "browserTarget": "InternetBanking-WebApp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -71,7 +71,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "InternetBnaking.WebApp:build"
+            "browserTarget": "InternetBanking-WebApp:build"
           }
         },
         "test": {
