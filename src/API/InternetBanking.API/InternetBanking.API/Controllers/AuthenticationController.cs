@@ -18,7 +18,7 @@ namespace InternetBanking.AuthAPI.Controllers
         }
 
         [HttpPost("AddUser")]
-        public async Task<ActionResult> AddUser(AddUserRequest addUserRequest)
+        public async Task<ActionResult> AddUser([FromBody] AddUserRequest addUserRequest)
         {
             await _authenticationService.AddUser(addUserRequest);
 
